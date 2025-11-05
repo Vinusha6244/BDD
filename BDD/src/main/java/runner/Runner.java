@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "featurefiles",
 		glue={"stepdefinitions","hooks"},
-		dryRun = true,
+		dryRun = false,
 		monochrome = true, 
 		plugin ={"html:target/report.html","json:target/report.json"},
 		tags="@Zomato"
